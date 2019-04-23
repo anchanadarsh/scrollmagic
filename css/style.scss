@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#section_wrapper {
+    position: relative;
+
+    $borderDim: 2px;
+
+    .screenElement {
+        height: 200px;
+        width: 400px;
+        position: absolute;
+        top: 100px;
+        left: calc(50% - 300px);
+        z-index: 1;
+        border: $borderDim solid black;
+
+        .tvElement {
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            bottom: 100px + $borderDim;
+            right: 50px - $borderDim;
+            z-index: 1;
+            border: $borderDim solid black;
+        }
+    }
+
+    .section_box {
+        position: relative;
+        padding: 15px;
+        height: 100vh;
+    }
+
+    #one {
+        background-color: aquamarine;
+    }
+
+    #two {
+        background-color: mediumpurple;
+    }
+
+    #three {
+        background-color: greenyellow;
+    }
+
+    #four {
+        background-color: cadetblue;
+    }
+
+}
